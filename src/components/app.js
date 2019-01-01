@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Quals from './quals';
+import Mission from './mission';
 
 export default class App extends Component {
   render() {
@@ -10,8 +11,11 @@ export default class App extends Component {
             <h2>logo</h2>
         </div>
           <Header/>
-          <div>
+          <div className='quals-card-container'>
             <Quals/>
+          </div>
+          <div className='mission-card-container'>
+            <Mission/>
           </div>
       </div>
 
