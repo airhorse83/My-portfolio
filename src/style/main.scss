@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgb(156, 156, 156);
+}
 
 .app {
     display: grid;
@@ -6,19 +8,18 @@
     grid-template-rows: 10vw 30vw 10vw;
     grid-gap: 1em;
     font-family: 'Inconsolata', monospace;
-    background-color: whitesmoke;
 }    
 
 
 .header {
     grid-column: 2 / span 2;
-    background-color: whitesmoke;
     width: 100%;
     text-align: center;
     padding-right: 200px;
-    color: blue;
+    color: white;
     text-align: center;
     h1 {
+        font-family: 'Stardos Stencil', cursive;
         font-size: 65px;
     }
 }
@@ -27,6 +28,24 @@
     width: 75%;
     padding-left: 20%;
     padding-top: 15px;
+    .fa-linkedin {
+        font-size: 30px;
+        padding-left: 20px;
+        color: blue;
+    }
+    .fa-linkedin:hover {
+        font-size: 40px;
+        transition: 0.5s;
+    }
+    .fa-github-square{
+        font-size: 30px;
+        padding-left: 20px;
+        color: black;
+    }
+    .fa-github-square:hover {
+        font-size: 40px;
+        transition: 0.5s;
+    }
 }
 
 .logo {
@@ -52,7 +71,7 @@
     border-image: 
       linear-gradient(
         to bottom, 
-        blue, 
+        black, 
         rgba(0, 0, 0, 0)
       ) 1 100%;
   
@@ -65,6 +84,7 @@
 .mission-card-container {
     grid-row: 2/3;
     grid-column: 2/3;
+    color: black;
    
     // background-color: whitesmoke;
 }

@@ -5,7 +5,8 @@ export default class Header extends Component {
     return (
       <div className='header-card'>
         <h1>Honor.Integrity.Excellence</h1>
-        <p>contact</p> 
+        <a href="https://www.linkedin.com/in/j-tyler-horsley-2a88a1173/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/airhorse83"><i class="fab fa-github-square"></i></a>
       </div>
     );
   }
