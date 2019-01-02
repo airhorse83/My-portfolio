@@ -46,6 +46,24 @@ body {
         font-size: 40px;
         transition: 0.5s;
     }
+    .fa-github-square{
+        font-size: 30px;
+        padding-left: 20px;
+        color: black;
+    }
+    .fa-github-square:hover {
+        font-size: 40px;
+        transition: 0.5s;
+    }
+    .fa-envelope-square{
+        font-size: 30px;
+        padding-left: 20px;
+        color: whitesmoke;
+    }
+    .fa-envelope-square:hover {
+        font-size: 40px;
+        transition: 0.5s;
+    }
 }
 
 .logo {
@@ -71,7 +89,7 @@ body {
     border-image: 
       linear-gradient(
         to bottom, 
-        black, 
+        white, 
         rgba(0, 0, 0, 0)
       ) 1 100%;
   
@@ -107,6 +125,7 @@ body {
     padding-top: 40px;
     h2 {
         font-size: 45px;
+        color: white;
     }
 
 }
