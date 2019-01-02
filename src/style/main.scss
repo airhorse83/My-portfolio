@@ -6,26 +6,36 @@
     grid-template-rows: 10vw 30vw 10vw;
     grid-gap: 1em;
     font-family: 'Inconsolata', monospace;
+    background-color: whitesmoke;
 }    
 
 
 .header {
     grid-column: 2 / span 2;
-    background-color: blue;
+    background-color: whitesmoke;
     width: 100%;
     text-align: center;
     padding-right: 200px;
-    color: red;
+    color: blue;
+    text-align: center;
     h1 {
         font-size: 65px;
     }
+}
+
+.header-card {
+    width: 75%;
+    padding-left: 20%;
+    padding-top: 15px;
 }
 
 .logo {
     grid-column: 1/2;
     text-align: center;
     justify-items: center;
-    padding-top: 50px;
+    h1 {
+        font-size: 1000%;
+    }
 }
 
 .quals-card-container {
@@ -34,29 +44,59 @@
 }
 
 .quals-card {
-    
-    border: 1px solid gray;
-    border-radius: 15%;
-    height: 250px;
-    width: 250px;
+    max-width: 250px;
+    padding: 1rem;
+    color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        blue, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+  
     text-align: left;
     margin-left: 25px;
     margin-top: 50px;
-    box-shadow: 1px 1px 0px 1px;
+    font-size: 25px;
 }
 
 .mission-card-container {
     grid-row: 2/3;
     grid-column: 2/3;
-    border: 1px solid black;
-    background-color: red;
+   
+    // background-color: whitesmoke;
 }
 
 .mission-card {
-    border: 2px solid black;
-    width: 50%;
-    height: 80%;
-    margin-left: 45%;
-    margin-top: 4%;
+    // border: 2px solid black;
+    width: 35%;
+    height: 60%;
+    margin-left: 55%;
+    margin-top: 7%;
+    max-width: 425px;
+    font-size: 20px;
 
+}
+
+.footer {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+    padding-top: 40px;
+    h2 {
+        font-size: 45px;
+    }
+
+}
+
+.footer-logo {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    justify-items: center;
+    h3 {
+        font-size: 1000%;
+    }
 }
