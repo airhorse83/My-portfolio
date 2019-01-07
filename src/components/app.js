@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
 import Header from './header';
 import Quals from './quals';
 import Mission from './mission';
@@ -7,7 +8,7 @@ import Footer from './footer';
 export default class App extends Component {
   render() {
     return (
-      <div className='app'>
+        <div className='app'>
           <div className='logo'>
               <h1>{"<"}</h1>
           </div>

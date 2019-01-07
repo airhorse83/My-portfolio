@@ -111,11 +111,25 @@ body {
     // border: 2px solid black;
     width: 35%;
     height: 60%;
-    margin-left: 55%;
-    margin-top: 7%;
+    margin-left: 10%;
+    margin-top: 5%;
     max-width: 425px;
     font-size: 20px;
 
+}
+
+
+.photo-card {
+   margin-left: -600px;
+//    height: auto;
+//    width: auto;
+//    max-width: 450px;
+//    max-height: 425px;
+   overflow: hidden;
+   object-fit: contain;
+
+   height: 425px;
+   width: 450px;
 }
 
 .footer {
