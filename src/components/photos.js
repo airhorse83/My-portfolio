@@ -4,7 +4,7 @@ import Carousel from 'react-image-carousel';
 
 
 let images = [
-    '/assets/fam.jpeg',
+    '/assets/fam.jpg',
   ];
   
   export default class Photos extends Component {
