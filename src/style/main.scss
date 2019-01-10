@@ -12,7 +12,7 @@ body {
 
 
 .header {
-    grid-column: 2 / span 2;
+    grid-column: 2;
     width: 100%;
     text-align: center;
     padding-right: 200px;
@@ -76,11 +76,11 @@ body {
 }
 
 .quals-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
     grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.quals-card {
     max-width: 250px;
     padding: 1rem;
     color: black;
@@ -97,22 +97,75 @@ body {
     margin-left: 25px;
     margin-top: 50px;
     font-size: 25px;
+    grid-row: 2/3;
+        .links {
+            color: black;
+            padding: 10px;
+            text-decoration-line: none;
+        }
+            .links:hover {
+                font-size: 40px;
+                transition: 0.5s;
+            }
+    
+}
+
+.quals-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    filter: alpha(opacity=0);
+    opacity: 1;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    i {
+        font-size: 100px;
+        padding: 25px;
+        color: white;
+        
+
+    }
+    
+}
+
+.mission-card-container {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
-
-.mission-card {
-    // border: 2px solid black;
+.tv1 {
     width: 35%;
     height: 60%;
-    padding-top: 45px;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    padding-top: 20px;
     max-width: 425px;
     font-size: 20px;
-    grid-row: 2/3;
-    grid-column: 2/3;
     color: black;
+    margin-bottom: 135px;
+}
+
+.tv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    width: 610px;
+    // flex-direction: column;
+    
+    
+}
+
+.about-me-card {
+    font-size: 25px;
 }
 
 
@@ -129,7 +182,7 @@ body {
     grid-row: 3/4;
     grid-column: 2/3;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 70px;
     h2 {
         font-size: 45px;
         color: white;
@@ -146,3 +199,11 @@ body {
         font-size: 1000%;
     }
 }
+
+
+// <p><i class="fab fa-python"></i>python</p>
+// <i class="fab fa-js-square">JavaScript</i>
+// <i class="fab fa-react">React</i>
+// <i class="fab fa-html5"></i>
+// <i class="fab fa-sass"></i>
+// <i class="fab fa-css3-alt"></i>
