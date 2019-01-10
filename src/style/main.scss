@@ -1,3 +1,18 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin phone {
+    @media (max-width: 700px) {
+        @content
+    }
+}
+
 body {
     background-color: rgb(156, 156, 156)!important;
 }
@@ -8,6 +23,10 @@ body {
     grid-template-rows: 10vw 30vw 10vw;
     grid-gap: 1em;
     font-family: 'Inconsolata', monospace;
+    @include phone {
+       display: flex;
+       flex-direction: column;
+    }
 }    
 
 
@@ -18,9 +37,16 @@ body {
     padding-right: 200px;
     color: white;
     text-align: center;
+    @include phone {
+        padding-right: 0px;
+    }
+    
     h1 {
         font-family: 'Stardos Stencil', cursive;
         font-size: 65px;
+        @include phone {
+            font-size: 25px;
+        }
     }
 }
 
@@ -72,6 +98,9 @@ body {
     justify-items: center;
     h1 {
         font-size: 1000%;
+        @include phone {
+            font-size: 50px;
+        }
     }
 }
 
@@ -98,6 +127,9 @@ body {
     margin-top: 50px;
     font-size: 25px;
     grid-row: 2/3;
+    @include phone {
+        margin-top: 5px;
+    }
         .links {
             color: black;
             padding: 10px;
@@ -107,7 +139,7 @@ body {
                 font-size: 40px;
                 transition: 0.5s;
             }
-    
+          
 }
 
 .quals-card {
@@ -116,18 +148,17 @@ body {
     grid-auto-rows: 1fr;
     justify-content: center;
     align-items: center;
-    transition: 1s;
-    filter: alpha(opacity=0);
-    opacity: 1;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: row;
-    // flex-wrap: wrap;
     i {
+        display: block;
         font-size: 100px;
         padding: 25px;
         color: white;
+        animation: fadeIn 2s ease 0s 1 forwards;
+        @include phone {
+            font-size: 45px;
+            margin-bottom: 100px;
+        }
+        
         
 
     }
@@ -140,6 +171,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include phone {
+        font-size: 15px;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 
@@ -151,6 +187,11 @@ body {
     font-size: 20px;
     color: black;
     margin-bottom: 135px;
+    @include phone {
+       width: 95vw;
+       height: 100%;
+       text-align: center;
+    }
 }
 
 .tv2 {
@@ -159,13 +200,19 @@ body {
     align-items: center;
     height: 460px;
     width: 610px;
-    // flex-direction: column;
+    @include phone {
+        width: 95vw;
+    }
+    
     
     
 }
 
 .about-me-card {
     font-size: 25px;
+    @include phone {
+        font-size: 15px;
+    }
 }
 
 
@@ -173,9 +220,17 @@ body {
    margin-left: -600px;
    overflow: hidden;
    object-fit: contain;
-
    height: 425px;
    width: 450px;
+   @include phone {
+    img {
+        width: 85vw;
+        height: 80vh;
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+    }
+
 }
 
 .footer {
@@ -183,9 +238,15 @@ body {
     grid-column: 2/3;
     text-align: center;
     padding-top: 70px;
+    @include phone {
+        padding-top: 0px;
+    }
     h2 {
         font-size: 45px;
         color: white;
+        @include phone {
+            font-size: 20px;
+        }
     }
 
 }
@@ -197,7 +258,11 @@ body {
     justify-items: center;
     h3 {
         font-size: 1000%;
+        @include phone {
+            font-size: 50px;
+        }
     }
+    
 }
 
 
