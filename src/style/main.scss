@@ -128,7 +128,10 @@ body {
     font-size: 25px;
     grid-row: 2/3;
     @include phone {
-        margin-top: 5px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        max-width: 85vw;
     }
         .links {
             color: black;
