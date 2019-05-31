@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import Carousel from 'react-image-carousel';
 
+import Projects from './projects';
 import Photos from './photos';
 import Header from './header';
 import Quals from './quals';
@@ -32,6 +32,7 @@ export default class App extends Component {
               <Route exact path="/aboutme" component={Photos} />
             </div>
             <div className='tv2'>
+             <Route exact path="/" component={Projects} />
              <Route path="/skills" component={Quals} />
              <Route path="/aboutme" component={AboutMe} />
             </div>

@@ -1,3 +1,10 @@
+@import 'variables';
+@import 'projects';
+
+
+
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -123,7 +130,7 @@ body {
       ) 1 100%;
   
     text-align: left;
-    margin-left: 25px;
+    margin-left: 100px;
     margin-top: 50px;
     font-size: 25px;
     grid-row: 2/3;
@@ -169,6 +176,10 @@ body {
 }
 
 .mission-card-container {
+    background-image: url(../../static/assets/laptop2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     grid-row: 2/3;
     grid-column: 2/3;
     display: flex;
@@ -212,6 +223,7 @@ body {
 }
 
 .about-me-card {
+    color: white;
     font-size: 25px;
     @include phone {
         font-size: 15px;
